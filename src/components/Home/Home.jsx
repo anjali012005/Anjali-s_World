@@ -31,17 +31,20 @@ const Home = () => {
 
     return (
         <div className="hero-section">
+
+            <div className="hero-heading-div">
+                <h2>Bringing <br /> Ideas To <br /> Life</h2>
+            </div>
+
             <div className="hero-img-div">
-                <img src={user_img} className="user-img" />
+                {/* <div className="user-img"> */}
+                    <img src={user_img} className="img-user"  />
+                {/* </div> */}
 
                 <div className="moving-txt-div" ref={movingDivRef}>
                     <h2 className="moving-text" ref={text1Ref}>Hi, My Name Is Anjali Daharwal</h2>
                     <h2 className="moving-text" ref={text2Ref}>Hi, My Name Is Anjali Daharwal</h2>
                 </div>
-            </div>
-
-            <div className="hero-heading-div">
-                <h2>Bringing <br /> Ideas To <br /> Life</h2>
             </div>
         </div>
     );
