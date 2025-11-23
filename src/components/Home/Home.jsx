@@ -5,6 +5,17 @@ import user_img from '../../assets/anjali-portfolio-img.png';
 import './Home.css';
 
 const Home = () => {
+
+    useGSAP(() => {
+        gsap.from(".hero-heading-div", {
+            opacity: 0,
+            y: 40,
+            duration: 2,
+            ease: "power3.out",
+            stagger: 0.2
+        });
+    });
+
     const movingDivRef = useRef(null);
     const text1Ref = useRef(null);
     const text2Ref = useRef(null);
@@ -38,7 +49,7 @@ const Home = () => {
 
             <div className="hero-img-div">
                 {/* <div className="user-img"> */}
-                    <img src={user_img} className="img-user"  />
+                <img src={user_img} className="img-user" />
                 {/* </div> */}
 
                 <div className="moving-txt-div" ref={movingDivRef}>

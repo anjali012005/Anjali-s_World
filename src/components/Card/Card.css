@@ -1,0 +1,41 @@
+.card-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Modern gradient card */
+.card {
+    background: linear-gradient(90deg, #2c0851ff, #a30e58ff);
+    border-radius: 14px;
+    padding: 18px 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 70px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+/* Smooth hover effect */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.22);
+}
+
+/* Text styling */
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@media(max-width:978px){
+    .card {
+        width:auto;
+        /* margin:20px; */
+    }
+}
