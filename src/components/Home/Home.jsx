@@ -4,7 +4,11 @@ import { useRef } from "react";
 import user_img from '../../assets/anjali-portfolio-img.png';
 import './Home.css';
 
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeProvider";
+
 const Home = () => {
+    const { theme, setTheme } = useContext(ThemeContext);
 
     useGSAP(() => {
         gsap.from(".hero-heading-div", {
@@ -42,6 +46,9 @@ const Home = () => {
 
     return (
         <div className="hero-section">
+            <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+                Toggle Theme
+            </button>
 
             <div className="hero-heading-div">
                 <h2>Bringing <br /> Ideas To <br /> Life</h2>

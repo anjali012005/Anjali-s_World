@@ -12,8 +12,17 @@
   position: relative;
   display:flex;
   gap:5px;
-  /* justify-content:space-between; */
-  /* background-color:pink; */
+  transition: background-color 0.3s ease;
+}
+
+/* Overlay */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--hero-overlay);
+  pointer-events: none;
+  transition: background-color 0.3s ease;
 }
 
 .hero-img-div{
@@ -27,24 +36,7 @@
     display:flex-reverse;
     justify-content:center;
     align-items:center;
-    /* overfloe:hidden; */
-
-
-    /* background: linear-gradient(90deg, #2c0851ff, #a30e58ff);  */
-    /* -webkit-background-clip: text; */
-    /* background-clip: text; */
-    /* color: transparent; */
 }
-
-/* .user-img {  */
-  /* display:flex; */
-  /* justify-self:center; */
-  /* padding-top:10px; */
-  /* width:60%; */
-  /* align-self:center; */
-  /* padding:30px; */
-  /* background-color:green; */
-/* } */
 
 .img-user{
     width: 50%;
@@ -58,29 +50,22 @@
     top:15%;
     left:10%;
     color:white;
-    /* padding-left:60px; */
-    /* background-color:blue; */
-    /* display:flex;
-    flex:1; */
     width:50%;
     height:85%;
-    /* height:75%;
-    display:flex;
-    justify-content:start;
-    flex-wrap:wrap; */
 }
 
 .hero-heading-div h2{
     font-size: clamp(2rem, 10vw, 8rem);
-    color:white;
+    color: var(--hero-text-color);
+    transition: color 0.3s ease;
     padding-left:60px;
     padding:20px;
-    /* display:flex;
-    flex-wrap:wrap; */
 }
 
 .moving-txt-div {
-  background-color: #82828277;
+  /* background-color: #82828277; */
+  background-color: var(--hero-overlay);
+  transition: background-color 0.3s ease;
   overflow: hidden;
   position: absolute;
   left:9%;
