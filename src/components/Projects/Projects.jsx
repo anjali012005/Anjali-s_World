@@ -10,7 +10,7 @@ import quiGenie from '../../assets/quiGenie-ui.mp4'
 import DynamicQuote from '../../assets/quote-ui.mp4'
 import Simon from '../../assets/simon-ui.mp4'
 import Abdul_Kalam from '../../assets/abdul-kalam-ui.mp4'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -18,11 +18,12 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
     const videoRefs = useRef([])
+    const [hovering, setHovering] = useState(false);
 
     useEffect(() => {
         videoRefs.current.forEach((video) => {
             if (!video) return
-            
+
             ScrollTrigger.create({
                 trigger: video,
                 start: "top 90%",
@@ -47,42 +48,36 @@ const Projects = () => {
             projectLink: "https://github.com/anjali012005/UI_PROJECT",
         },
         {
-            name: "oldportfolio",
-            projectVideo: oldportfolio,
-            projectDesc: "",
-            projectLink: "https://github.com/anjali012005/ANJALI_PORTFOLIO",
-        },
-        {
-            name: "Time_Table",
-            projectVideo: timetable,
-            projectDesc: "",
-            projectLink: "https://github.com/anjali012005/TimeTable.01",
-        },
-         {
-            name: "amazon",
-            projectVideo: amazon,
-            projectDesc: "",
-            projectLink: "https://github.com/anjali012005/Amazon-Clone",
-        },
-        {
             name: "QuiGenie",
             projectVideo: quiGenie,
             projectDesc: "",
             projectLink: "https://github.com/anjali012005/QuiGenie",
         },
+         {
+            name: "PrevPortfolio",
+            projectVideo: oldportfolio,
+            projectDesc: "",
+            projectLink: "https://github.com/anjali012005/ANJALI_PORTFOLIO",
+        },
         {
-            name: "todo",
+            name: "Amazon",
+            projectVideo: amazon,
+            projectDesc: "",
+            projectLink: "https://github.com/anjali012005/Amazon-Clone",
+        },
+        {
+            name: "Do_It",
             projectVideo: todo,
             projectDesc: "",
             projectLink: "https://github.com/anjali012005/TODO",
         },
         {
-            name: "weatherfirst",
+            name: "WeatherFirst",
             projectVideo: weatherfirst,
             projectDesc: "",
             projectLink: "https://github.com/anjali012005/Weather-Application",
         },
-         {
+        {
             name: "DynamicQuote",
             projectVideo: DynamicQuote,
             projectDesc: "",
@@ -101,20 +96,22 @@ const Projects = () => {
             projectLink: "https://github.com/anjali012005/APJ-kalam-s-Blog",
         },
         {
-            name: "MockInter",
-            projectVideo: "",
+            name: "Time_Table",
+            projectVideo: timetable,
             projectDesc: "",
-            projectLink: "",
+            projectLink: "https://github.com/anjali012005/TimeTable.01",
         },
     ]
 
     return (
-        <div className="projects-container">
+        <div id="project" className={`projects-container ${hovering ? "hover-active" : ""}`}>
             <h2 className="title">Projects</h2>
 
             <div className="projects-grid">
                 {pro.map((p, index) => (
-                    <div key={index} className="project-card">
+                    <div key={index} className="project-card"
+                        onMouseEnter={() => setHovering(true)}
+                        onMouseLeave={() => setHovering(false)}>
 
                         <div className="project-video">
                             {p.projectVideo ? (
@@ -133,8 +130,8 @@ const Projects = () => {
                         <h3 className="project-name">{p.name}</h3>
                         <p className="project-desc">{p.projectDesc}</p>
 
-                        <button href={p.projectLink} 
-                            onClick={() => window.open(p.projectLink, "_blank")}className="project-btn">View Project
+                        <button href={p.projectLink}
+                            onClick={() => window.open(p.projectLink, "_blank")} className="project-btn">View Project
                         </button>
                     </div>
                 ))}

@@ -30,6 +30,17 @@
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
+.projects-container.hover-active {
+  background: rgba(161, 149, 160, 0.4);
+  box-shadow: 
+    0 0 60px rgba(121, 12, 89, 0.39) inset,    /* pink-ish inner glow */
+    0 0 120px rgba(121, 6, 118, 0.25) inset;    /* purple inner glow */
+  transition: 0.4s ease;
+}
+
+
+
+
 .project-video video,
 .video-element {
     width: 100%;
@@ -77,5 +88,12 @@
 
 .project-btn:hover {
     background: #444;
+}
+
+@media(max-width:379px){
+    .projects-grid {
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       padding:20px;
+    }
 }
 
