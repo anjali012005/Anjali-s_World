@@ -1,42 +1,7 @@
 import './Glimps.css'
-
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
 import collage from '../../assets/collage.png'
 
 const GlimpsCollage = () => {
-  const collageRef = useRef(null);
-
-  // useEffect(() => {
-  //   gsap.from(collageRef.current.children, {
-  //     opacity: 0,
-  //     y: 40,
-  //     duration: 1,
-  //     stagger: 0.2,
-  //     ease: "power3.out",
-  //   });
-  // }, []);
-
-  // useEffect(() => {
-  //   const images = collageRef.current.querySelectorAll("img");
-  //   let loadedCount = 0;
-
-  //   images.forEach((img) => {
-  //     img.onload = () => {
-  //       loadedCount++;
-  //       if (loadedCount === images.length) {
-  //         gsap.from(collageRef.current.children, {
-  //           opacity: 0,
-  //           y: 40,
-  //           duration: 1,
-  //           stagger: 0.2,
-  //           ease: "power3.out",
-  //         });
-  //       }
-  //     };
-  //   });
-  // }, []);
-
 
   return (
     <div className="glimps-wrapper">
@@ -56,7 +21,9 @@ const GlimpsCollage = () => {
             </p>
           </div>
           <div className='right-div-button'>
-            <button>Know My Work</button>
+            <button onClick={() => {
+              document.getElementById("project")?.scrollIntoView({ behavior: "smooth" });
+            }}>Know My Work</button>
           </div>
         </div>
       </div>
