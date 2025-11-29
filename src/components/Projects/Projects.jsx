@@ -8,6 +8,7 @@ import todo from '../../assets/todo-ui.mp4'
 import weatherfirst from '../../assets/weatherfirst-ui.mp4'
 import quiGenie from '../../assets/quiGenie-ui.mp4'
 import DynamicQuote from '../../assets/quote-ui.mp4'
+import webSocket from '../../assets/java-websocket.mp4'
 import Simon from '../../assets/simon-ui.mp4'
 import Abdul_Kalam from '../../assets/abdul-kalam-ui.mp4'
 import { useEffect, useRef, useState } from 'react'
@@ -41,6 +42,12 @@ const Projects = () => {
             projectDesc: "",
             projectLink: "",
         },
+         {
+            name: "QuiGenie",
+            projectVideo: quiGenie,
+            projectDesc: "",
+            projectLink: "https://github.com/anjali012005/QuiGenie",
+        },
         {
             name: "Brainwave",
             projectVideo: brainwave,
@@ -48,10 +55,10 @@ const Projects = () => {
             projectLink: "https://github.com/anjali012005/UI_PROJECT",
         },
         {
-            name: "QuiGenie",
-            projectVideo: quiGenie,
+            name: "MultiThreading_WebSocket",
+            projectVideo: webSocket,
             projectDesc: "",
-            projectLink: "https://github.com/anjali012005/QuiGenie",
+            projectLink: "https://github.com/anjali012005/WebServer_Java",
         },
          {
             name: "PrevPortfolio",

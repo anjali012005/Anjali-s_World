@@ -59,6 +59,7 @@ const Achievements = () => {
 
   return (
     <div className="ach-container">
+      <h1>Achievements</h1>
       {achievements.map((item, index) => (
         <div key={index} className="ach-box">
           <div className="ach-header" onClick={() => toggle(index)}>
