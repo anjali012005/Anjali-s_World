@@ -22,7 +22,7 @@ const GlimpsCollage = () => {
           </div>
           <div className='right-div-button'>
             <button onClick={() => {
-              document.getElementById("project")?.scrollIntoView({ behavior: "smooth" });
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
             }}>Know My Work</button>
           </div>
         </div>
