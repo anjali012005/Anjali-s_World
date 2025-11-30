@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <Home/>
-      {/* <MovingSkills/> */}
-      {/* <Education /> */}
+      <MovingSkills/>
+      <Education />
       <Glimps/>
       {/* <Skills/> */}
       <Projects />
