@@ -7,7 +7,7 @@ import intern1 from '../../assets/intern1.jpeg'
 const Experience = () => {
 
     return (
-        <div className="experience-section">
+        <div id="experience" className="experience-section">
             <div className="experience-wrapper">
                 <h1 className="experience-heading">
                     Experience

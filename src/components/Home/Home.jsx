@@ -46,9 +46,9 @@ const Home = () => {
 
     return (
         <div className="hero-section">
-            <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+            {/* <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
                 Toggle Theme
-            </button>
+            </button> */}
 
             <div className="hero-heading-div">
                 <h2>Bringing <br /> Ideas To <br /> Life</h2>

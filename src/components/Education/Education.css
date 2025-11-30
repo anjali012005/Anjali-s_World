@@ -38,7 +38,7 @@
   top: 50%;           /* vertical center */
   left: 50%;          /* horizontal center */
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
   font-size: 72px;
   font-weight: 700;
   text-align: center;

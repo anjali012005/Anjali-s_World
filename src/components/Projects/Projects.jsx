@@ -111,7 +111,7 @@ const Projects = () => {
     ]
 
     return (
-        <div id="project" className={`projects-container ${hovering ? "hover-active" : ""}`}>
+        <div id="projects" className={`projects-container ${hovering ? "hover-active" : ""}`}>
             <h2 className="title">Projects</h2>
 
             <div className="projects-grid">
