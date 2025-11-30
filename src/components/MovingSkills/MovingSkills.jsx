@@ -91,10 +91,10 @@ export default function MovingSkills() {
           <span>FULL-STACK DEVELOPER</span>
         </div>
 
-        <div className="item">
+        {/* <div className="item">
           <img src={star} alt="" />
           <span>DEVOPS ENGINEER</span>
-        </div>
+        </div> */}
       </div>
 
     </div>

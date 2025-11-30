@@ -1,5 +1,5 @@
 import './Glimps.css'
-import collage from '../../assets/collage.png'
+import collage from '../../assets/collage-img.png'
 
 const GlimpsCollage = () => {
 
