@@ -5,6 +5,10 @@ This repository contains the source code of my **personal developer portfolio we
 
 🔗 **Live Portfolio:**:-  https://anjaliportfolio-eight.vercel.app/
 
+<img width="1888" height="946" alt="image" src="https://github.com/user-attachments/assets/062380b0-11b5-4864-a7c9-8ff38ace298b" />
+<img width="1908" height="862" alt="image" src="https://github.com/user-attachments/assets/eff2cdfa-c510-47ff-a584-10e60fb50e86" />
+
+
 ---
 
 ## 👩‍💻 About Me
@@ -64,7 +68,11 @@ cd Anjali-s_World
 # Install dependencies
 npm install
 ```
-# ✨ Thank you for visiting Anjali's World!
-
 # Start development server
 npm run dev
+
+# ✨ Thank you for visiting Anjali's World!
+
+# 💛 Author<br/>
+Anjali Daharwal<br/>
+CS Student | Web Developer | Java Developer | Full-Stack Developer
